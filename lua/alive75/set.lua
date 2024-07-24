@@ -41,7 +41,7 @@ vim.opt.breakindent = true
 -- Save undo history
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.undodir = '~/.vim/undodir'
+vim.opt.undodir = vim.fn.stdpath 'config' .. '/undo'
 vim.opt.undofile = true
 
 -- Case-insensitive searching UNLESS \C or one or more capital letters in the search term
