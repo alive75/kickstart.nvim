@@ -87,3 +87,9 @@ vim.opt.updatetime = 50
 
 --color column Y
 vim.opt.colorcolumn = '80'
+
+--allow folding
+vim.opt.foldmethod = 'expr'
+vim.opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+vim.opt.foldenable = false
+vim.opt.foldlevel = 20

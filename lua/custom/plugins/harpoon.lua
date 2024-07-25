@@ -89,6 +89,13 @@ return {
         desc = 'Harpoon Toggle Menu',
       },
       {
+        '<leader>d',
+        function()
+          harpoon:list():remove(selected_entry)
+        end,
+        desc = 'Harpoon remove selected file',
+      },
+      {
         '<leader>a',
         function()
           harpoon:list():add()
